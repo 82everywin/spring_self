@@ -35,7 +35,7 @@ public class BasicController {
         return "ex02";
     }
 
-    @GetMapping("/main/index")
+    @GetMapping("/index")
     public String ex09(){
         return "main/index";
     }
