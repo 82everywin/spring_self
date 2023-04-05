@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Ex02</title>
+</head>
+<body>
+<h1> 회원정보 출력 예제 </h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>순번</th>
+                <th>회원번호</th>
+                <th>아이디</th>
+                <th>비밀번호</th>
+                <th>회원명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="memberLists, status: ${memberLists}">
+                <td th:text="${status.index}"></td>
+                <td th:text="${memberLists.userNo}"></td>
+                <td th:text="${memberLists.userId}"></td>
+                <td th:text="${memberLists.userPw}"></td>
+                <td th:text="${memberLists.userNm}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
