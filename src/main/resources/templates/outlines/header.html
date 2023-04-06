@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf/org/extras/spring-security">
 <header th:fragment="header">
-    header영역입니다.
+        <th:block sec:authorize="isAuthenticated()"> // member.admin 에게만 로그아웃 보여짐
+                <a th:href="@{/member/logout}" th="#{logout}"></a>
+        </th:block>
+        <th:block sec:authorize="isAnonymous()"> // 누구나 일떄는 로그인/회원가입 이 나오기!
+            <a th:href="@{/member/join}" th="#{member.join}"></a>
+            <a th:href="@{/member/login}" th="#{member.login}"></a>
+        </th:block>
 </header>
 </html>
