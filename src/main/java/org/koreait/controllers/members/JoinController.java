@@ -1,2 +1,11 @@
-package org.koreait.controllers.members;public class JoinController {
+package org.koreait.controllers.members;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/member/join")
+public class JoinController {
+
+    public String
 }

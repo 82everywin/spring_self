@@ -1,4 +1,4 @@
-package org.koreait.controllers.member;
+package org.koreait.controllers.members;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;

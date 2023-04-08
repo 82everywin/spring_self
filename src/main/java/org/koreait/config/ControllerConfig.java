@@ -1,8 +1,7 @@
 package org.koreait.config;
 
-import lombok.experimental.WithBy;
 import org.koreait.controllers.BasicController;
-import org.koreait.controllers.member.LoginController;
+import org.koreait.controllers.members.LoginController;
 import org.springframework.context.annotation.Bean;
 
 public class ControllerConfig {
