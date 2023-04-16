@@ -7,5 +7,4 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/member/join")
 public class JoinController {
 
-    public String
 }
